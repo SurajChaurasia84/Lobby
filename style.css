@@ -1,0 +1,157 @@
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    .container {
+        position: fixed;
+        bottom: 20px;
+        width: 80%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .containe {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    button {
+        background: #2563eb;
+        border: none;
+        color: white;
+        padding: 10px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    button:hover {
+        background: #1d4ed8;
+    }
+
+    textarea, input {
+        width: 100%;
+        padding: 8px;
+        border-radius: 6px;
+        border: none;
+        margin-top: 6px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .copy-btn {
+        background: #10b981;
+        margin-top: 5px;
+    }
+
+    .copy-btn:hover {
+        background: #059669;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        color: white;
+    }
+
+    .badge.online {
+        background: #22c55e;
+    }
+
+    #chat {
+        flex: 1;
+        overflow-y: auto;
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+
+    #chat div {
+        margin-bottom: 10px;
+    }
+
+    .me {
+        text-align: right;
+        color: #4ade80;
+    }
+
+    .other {
+        text-align: left;
+        color: #38bdf8;
+    }
+
+    .typing {
+        text-align: left;
+        color: #94a3b8;
+        font-style: italic;
+    }
+
+    .chat-input {
+        display: flex;
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .chat-input input {
+        flex: 1;
+    }
+
+    .chat-input button {
+        width: auto;
+    }
+
+    .chat-header {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        background: none;
+        border: none;
+        font-size: 22px;
+        font-weight: bold;
+        color: red;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        color: darkred;
+    }
+    
+
+    @media (max-width: 600px) {
+        body {
+            padding: 0;
+        }
+    }
